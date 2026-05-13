@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="funct_mgmt">
+    <div class="function_df">
+    {% for i_func in function_df %}
+        <div id="{{i_func.connection_function_name}}" class="function">
+            <form name='function_management_dashboard_form' id='function_management_dashboard_form' action='/synapse/function_management_dashboard/' method='post'>
+                {% csrf_token %}
+                
+                <input type="hidden" id="function_name" name="function_name" value="{{ i_func.connection_function_name }}">     
+                
+                    {% for key, value in  i_func.function_input_values_schema.items %}
+                        {% if value %}
+                            <label for="{{ key }}">{{ key }}:</label><br>
+                            <input type="text" id="{{ key }}" name="__input__{{ key }}__">                        
+                        {% endif %}
+                    {% endfor %}
+
+                <input type="submit" value="Run function {{i_func.connection_function_name|safe}}">
+            </form>
+            
+            {% for i_user_dict_key in output_user_saved_inputs %}
+                {% if i_user_dict_key.input_connection_function_id == i_func.id %}
+                <p>Saved Inputs</p>
+                
+                <form name='function_management_dashboard_form' id='function_management_dashboard_form' action='/synapse/function_management_dashboard/' method='post'>
+                    {% csrf_token %}
+                    
+                    <input type="hidden" id="function_name" name="function_name" value="{{ i_func.connection_function_name }}">
+                    
+                    {% for key, value in  i_user_dict_key.input_value.items %}
+                        {% if value %}
+                            <input type="hidden" id="__input__{{ key }}__" name="__input__{{ key }}__" value="{{ value }}">
+
+                            <input type="submit" value="{{value|safe}} - function {{i_func.connection_function_name|safe}}">                   
+                        {% endif %}
+                    {% endfor %}      
+
+                </form>
+                
+                {% endif %}
+            {% endfor %}
+        </div>
+    {% endfor %}
+    </div>
+
+    <div class="output_user_dict_key">
+        
+        {% for i_dictionary_keys in dictionary_keys %}
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">{{i_dictionary_keys.unique_key|safe}}</h5>
+                    <p class="card-text">{{i_dictionary_keys.unique_key_desc|safe}}</p>
+                    
+                    {% for i_user_dict_key in output_user_dict_key %}
+                        {% if i_user_dict_key.dictionary_key_id == i_dictionary_keys.id %}
+                            <h6 class="card-subtitle mb-2 text-body-secondary">{{i_user_dict_key.dictionary_table_key|safe}}</h6>
+                            <a href="#{{i_user_dict_key.connection_function_name}}" class="card-link">{{i_user_dict_key.connection_function_name|safe}}</a>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+
+        {% for i_user_dict_key in output_user_dict_key %}
+            {% if i_user_dict_key.dictionary_key_id == 0 %}
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{i_user_dict_key.dictionary_table_key|safe}}</h5>    
+                        <h6 class="card-subtitle mb-2 text-body-secondary">{{i_user_dict_key.data_value_column|safe}}</h6>
+                        <p class="card-text">{{i_user_dict_key.function_type|safe}}</p>
+
+                        <a href="#{{i_user_dict_key.connection_function_name}}" class="card-link">{{i_user_dict_key.connection_function_name|safe}}</a>
+
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+
+
+    </div>
+</div>
+
+    <div class='temp_output'>
+        {{temp_output.temp_data|safe}}
+    </div>
+
+
+{% endblock %}

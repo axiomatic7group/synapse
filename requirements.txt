@@ -1,0 +1,14 @@
+asgiref==3.11.1
+beautifulsoup4==4.14.3
+bs4==0.0.2
+Django==6.0.4
+greenlet==3.5.0
+numpy==2.4.4
+pandas==3.0.2
+psycopg2-binary==2.9.12
+python-dateutil==2.9.0.post0
+six==1.17.0
+soupsieve==2.8.3
+SQLAlchemy==2.0.49
+sqlparse==0.5.5
+typing_extensions==4.15.0
