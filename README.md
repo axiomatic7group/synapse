@@ -5,23 +5,9 @@ Built on a robust, hardened Django core, Synapse translates chaotic data silos i
 
 ------------------------------
 
-## ⚙️ Core Architecture & Features
+![Synapse is the foundational, open-source neural gateway of the Axiom Digital Labor Platform](https://github.com/axiomatic7group/synapse/raw/main/assets/synapse_hero.png)
 
-          [ Autonomous Labor / External API Layer ] 
-                              │
-                              ▼
-┌───────────────────────────────────────────────────────────────┐
-│                   SYNAPSE GOVERNANCE LAYER                    │
-├──────────────────────────────┬────────────────────────────────┤
-│ 🛡️ Hardened RBAC Middleware  │ 📊 Dynamic Semantic Schema     │
-│    (Django user_info + Base) │    (Type Enforcement Mappings) │
-├──────────────────────────────┴────────────────────────────────┤
-│            🔌 Encrypted Local File Virtualization             │
-│               (Protected pd.read_excel Pipelines)             │
-└───────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-            [ Regulated Enterprise Execution Env ]
+------------------------------
 
 ## 🛡️ User-Level Access Control (Deterministic RBAC)
 Synapse eliminates "Shadow AI" by decoupling system intelligence from data access rights. Using Django's secure infrastructure, it forces every process to adhere to strict corporate role identities.
