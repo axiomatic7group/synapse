@@ -105,11 +105,15 @@ docker-compose up -d
 ---
 
 ## **Why Choose Synapse?**
-✅ **Open-Source First** – No vendor lock-in, full transparency.
-✅ **Enterprise-Grade** – SOC 2, GDPR, HIPAA compliant.
-✅ **Scalable** – Handles **petabyte-scale data** with sub-second policy checks.
-✅ **Interoperable** – Works with **SQL, NoSQL, APIs, and blockchain**.
-✅ **Future-Proof** – Designed for **federated data networks and AI governance**.
+**Open-Source First** – No vendor lock-in, full transparency.
+
+**Enterprise-Grade** – SOC 2, GDPR, HIPAA compliant.
+
+**Scalable** – Handles **petabyte-scale data** with sub-second policy checks.
+
+**Interoperable** – Works with **SQL, NoSQL, APIs, and blockchain**.
+
+**Future-Proof** – Designed for **federated data networks and AI governance**.
 
 ---
 ### **🔗 Explore the Axiom Ecosystem**
