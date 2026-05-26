@@ -33,9 +33,13 @@ Synapse is the **missing governance layer** for modern data collaboration. Desig
 
 ### **Synapse Solves This By**
 ✔ **Semantic Consistency** – Unified ontologies ensure **all teams use the same data definitions**.
+
 ✔ **Policy Enforcement** – **Real-time checks** prevent unauthorized access.
+
 ✔ **Automated Compliance Reporting** – Generates **GDPR, HIPAA, SOC 2** reports out of the box.
+
 ✔ **Federated Data Sharing** – **Decentralized collaboration** without exposing raw data.
+
 ✔ **Data Lineage Tracking** – Answer **"Where did this data come from?"** with full transparency.
 
 ---
@@ -46,7 +50,7 @@ Synapse is **one piece of a larger ecosystem** (Axiom) but functions as a **stan
 ### **The Four Layers of Axiom**
 | **Layer** | **Component** | **Purpose** | **Synapse’s Role** |
 |-----------|--------------|-------------|--------------------|
-| **Governance** | Synapse | Policy enforcement, audit trails, and compliance. | **Enforces access controls and semantic rules.** |
+|**Governance**|Synapse|Policy enforcement, audit trails, and compliance.| **Enforces access controls and semantic rules.** |
 | **Semantic** | Synapse | Unified data definitions and relationships. | **Standardizes terms and formats across systems.** |
 | **Action** | Cadence | Workflow orchestration and task dependencies. | **Manages data pipelines and retries.** |
 | **Reasoning** | Daemon | Secure AI for querying and analysis. | **Provides a private, optimized AI layer.** |
@@ -65,14 +69,14 @@ Synapse is **one piece of a larger ecosystem** (Axiom) but functions as a **stan
 Synapse is **open-source first**, with **three foundational components** that serve as **low-cost customer acquisition (CAC) channels**:
 
 | **Component** | **Purpose** | 
-|--------------|------------------|-------------|-------------------------|
+|--------------|------------------|
 | **[Daemon](https://github.com/synapse-labs/daemon)** | The **Reasoning Engine** (secure brain for governance logic). | 
 | **[Cadence](https://github.com/synapse-labs/cadence)**  | The **Orchestrator** (manages workflows, dependencies, and retries). | 
 | **[Synapse](https://github.com/synapse-labs/synapse)** | The **Semantic & Governance Layer** (policy enforcement, audit trails). |
 
 ---
 
-## **🌍 Use Cases**
+## **Use Cases**
 Synapse is ideal for **regulated industries and multi-party collaboration**:
 
 | **Industry** | **Use Case** | **Synapse’s Role** |
@@ -85,7 +89,7 @@ Synapse is ideal for **regulated industries and multi-party collaboration**:
 
 ---
 
-## **🛠️ Getting Started**
+## **Getting Started**
 ### **For Developers**
 ```bash
 git clone https://github.com/axiomatic7group/synapse.git
@@ -95,12 +99,12 @@ docker-compose up -d
 
 ---
 
-## **📜 License & Legal**
+## **License & Legal**
 - **License**: [MIT](https://github.com/synapse-labs/synapse/blob/main/LICENSE)
 
 ---
 
-## **🚀 Why Choose Synapse?**
+## **Why Choose Synapse?**
 ✅ **Open-Source First** – No vendor lock-in, full transparency.
 ✅ **Enterprise-Grade** – SOC 2, GDPR, HIPAA compliant.
 ✅ **Scalable** – Handles **petabyte-scale data** with sub-second policy checks.
@@ -115,14 +119,14 @@ Synapse is **one piece of a larger ecosystem** (Axiom) that provides:
 🔹 **Daemon**: Secure AI Reasoning Engine
 🔹 **Axiom**: The Digital Labor OS (integrates all layers)
 
-🔗 **[Website](https://axiomaticlab.com)** | 🐙 **[GitHub](https://github.com/axiomatic7group)** | 📧 **[Contact](https://axiomaticlab.com)**
+🔗 **[Website](https://axiomaticlab.com)** | **[GitHub](https://github.com/axiomatic7group)** | **[Youtube](https://www.youtube.com/channel/UCltGi4Su305oln_ldu-b94Q)**
 
 ---
-**📌 Pro Tip:**
+**Pro Tip:**
 *"If you’re evaluating data governance tools, ask yourself: **Does this reduce legal exposure, or does it add another layer of risk?** Synapse is the only platform that guarantees **defensible, auditable data governance**."*
 
 ---
-**🚀 Ready to Govern Your Data?**
+**Ready to Govern Your Data?**
 [**Get Started Now**](https://https://github.com/axiomatic7group/synapse) | [**Explore Axiom**](https://axiomaticlab.com)
 
 
