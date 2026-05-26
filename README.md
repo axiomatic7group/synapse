@@ -107,7 +107,7 @@ docker-compose up -d
 ## **Why Choose Synapse?**
 **Open-Source First** – No vendor lock-in, full transparency.
 
-**Enterprise-Grade** – SOC 2, GDPR, HIPAA compliant.
+**Enterprise-Grade** – Designed to be SOC 2, GDPR, HIPAA compliant.
 
 **Scalable** – Handles **petabyte-scale data** with sub-second policy checks.
 
