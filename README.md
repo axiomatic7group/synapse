@@ -22,7 +22,7 @@ Synapse is the **missing governance layer** for modern data collaboration. Desig
  **Data Silos** – Disparate systems lack standardization.
  **Compliance Nightmares** – GDPR, HIPAA, SOC 2 require **auditability and control**.
  **Vendor Lock-In** – Cloud providers (AWS, Azure, GCP) offer **limited portability**.
- **Semantic Inconsistency** – Different teams use **different terms for the same data**.
+ **Semantic Inconsistency** – Different teams and different data sources use **different terms for the same data**.
  **Security Risks** – **Shadow AI** and **unauthorized access** expose organizations to liability.
 
 ### **Real-World Failures**
@@ -36,11 +36,7 @@ Synapse is the **missing governance layer** for modern data collaboration. Desig
 
 ✔ **Policy Enforcement** – **Real-time checks** prevent unauthorized access.
 
-✔ **Automated Compliance Reporting** – Generates **GDPR, HIPAA, SOC 2** reports out of the box.
-
-✔ **Federated Data Sharing** – **Decentralized collaboration** without exposing raw data.
-
-✔ **Data Lineage Tracking** – Answer **"Where did this data come from?"** with full transparency.
+✔ **Legacy Compatability** – Ensure you have access to **all of your data** no matter the source.
 
 ---
 
@@ -91,10 +87,17 @@ Synapse is ideal for **regulated industries and multi-party collaboration**:
 
 ## **Getting Started**
 ### **For Developers**
-```bash
-git clone https://github.com/axiomatic7group/synapse.git
-cd synapse
-docker-compose up -d
+
+```
+
+    bash
+    git clone https://github.com/axiomatic7group/synapse.git
+    cd synapse
+    python3 manage.py makemigrations
+    python3 manage.py migrate
+    python3 manage.py createsuperuser
+    python3 manage.py runserver
+
 ```
 
 ---
@@ -105,15 +108,15 @@ docker-compose up -d
 ---
 
 ## **Why Choose Synapse?**
-**Open-Source First** – No vendor lock-in, full transparency.
+**Open-Source** – No vendor lock-in, full transparency.
 
 **Enterprise-Grade** – Designed to be SOC 2, GDPR, HIPAA compliant.
 
-**Scalable** – Handles **petabyte-scale data** with sub-second policy checks.
+**Scalable** – Handles **large-scale data** with fast policy checks.
 
-**Interoperable** – Works with **SQL, NoSQL, APIs, and blockchain**.
+**Interoperable** – Works with **Databases, APIs, and even local files**.
 
-**Future-Proof** – Designed for **federated data networks and AI governance**.
+**Future-Proof** – Designed for **complex data networks and AI governance**.
 
 ---
 ### **🔗 Explore the Axiom Ecosystem**
@@ -127,7 +130,7 @@ Synapse is **one piece of a larger ecosystem** (Axiom) that provides:
 
 ---
 **Pro Tip:**
-*"If you’re evaluating data governance tools, ask yourself: **Does this reduce legal exposure, or does it add another layer of risk?** Synapse is the only platform that guarantees **defensible, auditable data governance**."*
+*"If you’re evaluating data governance tools, ask yourself: **Does this reduce legal exposure, or does it add another layer of risk?** Synapse is an open-source tool that delivers **defensible, auditable data governance**."*
 
 ---
 **Ready to Govern Your Data?**
@@ -137,13 +140,15 @@ Synapse is **one piece of a larger ecosystem** (Axiom) that provides:
 ---
 # Axiomatic Lab
 
-Mission: To deliver "Obvious" automation through secure, task-based AI onboarding.
+Mission: On-boarding AI that eliminates Operational Debt.
 
 ### 1. The Challenge: The "Black Box" Risk
 Modern enterprises struggle with automation that is either too rigid or dangerously opaque. Standard AI implementations often lack granular security controls, creating a "clearance gap" where automated systems have more access than the employees they assist. Furthermore, when complex automated sequences fail, most systems require a total restart, leading to significant operational downtime.
 
 ### 2. The Solution: Task-Based AI Onboarding
-Axiomatic Lab treats AI agents like professional hires rather than just software. We automate your business by **"onboarding"** specific individual tasks, ensuring every automated action follows the same logical path as a human teammate.
+Axiomatic Lab treats AI agents like professional hires rather than just software. We automate your business by **"onboarding"** your organizations tasks, notes, and Ai chats, one at a time, alongside your staff all in one platform. Ensuring every automated action, note, and company information is collected, organized, and maintained to ensure your business operates efficiently and strategically.
+
+**Background Knowledge Agents:** Automated background agents that will continously review all provided data from user workflows, notes, and AI chats, to relevant connected databases to create, maintain, and organize your companies operations. Automatically generating and updating Processes and Procedures, Company Guidelines, Client Notes, and much more.
 
 **Security-Level Attribution:** Unlike generic AI, every task within our system is assigned a specific user-security level. This ensures that the AI only interacts with data and systems it is explicitly authorized to access, mimicking your internal organizational hierarchy.
 
@@ -153,6 +158,7 @@ Axiomatic Lab treats AI agents like professional hires rather than just software
 
 ### 3. Business Impact & Value
 By choosing Axiomatic Lab, your organization gains:
+-**Rapid Strategic Growth:** A suistainable platform that ensures your organization remains efficient and operationally sound as you scale Fast!
 -**Total Oversight:** A transparent, auditable trail for every automated action.
 -**Risk Mitigation:** Granular permissions that eliminate unauthorized data access.
 -**Operational Agility:** The ability to modify and "hot-fix" live automations without process disruption.
@@ -160,9 +166,9 @@ By choosing Axiomatic Lab, your organization gains:
 ### 4. Next Steps
 We recommend a Phase 1 Pilot to identify your **"obvious" automation wins.**
 
-**Discovery Call:** Review your most repetitive, high-security tasks.
+**Discovery Call:** Review your most repetitive, high-margin tasks.
 
-**Prototype:** Deploy one secure task-based agent within 90 days.
+**Prototype:** Deploy a secure task-based agent within 90 days.
 
 ---
 
